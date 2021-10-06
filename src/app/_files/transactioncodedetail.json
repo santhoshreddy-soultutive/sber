@@ -1,0 +1,16 @@
+[
+  { "transactioncodeDescription": "SEPA Payment - Credit", "icon": "", "transactionCode": "SC", "category": "Salary" },
+  { "transactioncodeDescription": "FlexPay Payment", "icon": "", "transactionCode": "FT", "category": "FlexPay" },
+  { "transactioncodeDescription": "Own Account Transfer", "icon": "", "transactionCode": "OT", "category": "Own Account " },
+  { "transactioncodeDescription": "SEPA Inward", "icon": "", "transactionCode": "IPAY", "category": "FlexPay" },
+  { "transactioncodeDescription": "SEPA Outward", "icon": "", "transactionCode": "OPAY", "category": "FlexPay" },
+  { "transactioncodeDescription": "Transfer Credit", "icon": "", "transactionCode": "TC", "category": "Own Account " },
+  { "transactioncodeDescription": "Salary Payment", "icon": "", "transactionCode": "SP", "category": "Salary" },
+  { "transactioncodeDescription": "FlexPay Repayment", "icon": "", "transactionCode": "FR", "category": "Financing" },
+  { "transactioncodeDescription": "FlexPay Utilization", "icon": "", "transactionCode": "FP", "category": "Refund" },
+  { "transactioncodeDescription": "Card Payment", "icon": "", "transactionCode": "CP", "category": "Credit Card " },
+  { "transactioncodeDescription": "SEPA Payment - Energy", "icon": "", "transactionCode": "SE", "category": "Energy" },
+  { "transactioncodeDescription": "SEPA Payment - Insurance", "icon": "", "transactionCode": "SI", "category": "Insurance" },
+  { "transactioncodeDescription": "SEPA Payment - Rent", "icon": "", "transactionCode": "SR", "category": "Rent" },
+  { "transactioncodeDescription": "Transfer Debit", "icon": "", "transactionCode": "TD", "category": "Own Account " }
+]

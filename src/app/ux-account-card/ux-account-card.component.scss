@@ -1,0 +1,179 @@
+@function toVw($value) {
+  @return ($value * 100/ 375) + vw;
+}
+
+@function toVh($value) {
+  @return ($value * 100/ 812) + vh;
+}
+
+$fontWeightLight: 300;
+$fontWeightRegular: 400;
+$fontWeightMedium: 500;
+$fontWeightSemiBold: 600;
+$fontWeightBold: 700;
+$fontWeightExtraBold: 800;
+
+.card {
+  width: toVw(214);
+  background-color: #ffffff;
+  border-radius: toVw(20);
+  margin: 0px;
+  margin-right: toVw(20);
+  flex-shrink: 0;
+  box-shadow: 0px 3px toVw(29) #00000029;
+  opacity: 1;
+  background-blend-mode: soft-light;
+  padding-left: toVw(12);
+  padding-top: toVh(15);
+  padding-bottom: toVh(13);
+  display: flex;
+  flex-direction: column;
+  > div {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(toVw(4)) translateY(toVw(2));
+  }
+  &.active-card {
+    width: toVw(214);
+    padding-left: toVw(12);
+    padding-bottom: toVh(18);
+    > div {
+      transform: translateX(0);
+    }
+  }
+}
+
+.card {
+  p {
+    margin-bottom: 0;
+    &.accountnumber {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      img {
+        width: toVw(24);
+        height: toVh(23.43);
+        margin-right: toVw(10);
+      }
+      span {
+        font-weight: $fontWeightRegular;
+        font-size: 10px;
+        letter-spacing: 0px;
+        text-align: left;
+        line-height: 7px;
+        color: #656565;
+      }
+    }
+  }
+
+  p {
+    &.accountname {
+      margin-top: toVh(11.84);
+      color: #656565;
+      opacity: 1;
+      text-align: left;
+      font-size: 10px;
+      font-weight: $fontWeightRegular;
+      letter-spacing: 0px;
+      line-height: 11px;
+      overflow-wrap: break-word;
+      max-width: toVw(171);
+    }
+  }
+
+  p {
+    &.balance {
+      margin-top: toVh(10);
+      color: #0b0b0b;
+      opacity: 1;
+      text-align: left;
+      font-size: 14px;
+      font-weight: $fontWeightBold;
+      letter-spacing: 0px;
+      line-height: 18px;
+      span {
+        font-weight: $fontWeightLight;
+      }
+    }
+  }
+
+  p {
+    &.availablebalance {
+      margin-top: toVh(-28.84);
+      opacity: 0;
+      span {
+        display: block;
+        color: #8d8d8d;
+        opacity: 1;
+        text-align: left;
+        font-size: 12px;
+        font-weight: $fontWeightMedium;
+        letter-spacing: -0.12px;
+        line-height: 14px;
+      }
+    }
+  }
+}
+
+.card {
+  &.active-card {
+    p {
+      &.accountnumber {
+        span {
+          color: #656565;
+          opacity: 1;
+          text-align: left;
+          font-size: 10px;
+          font-weight: $fontWeightMedium;
+          letter-spacing: -0.1px;
+          line-height: 7px;
+        }
+      }
+    }
+
+    p {
+      &.accountname {
+        color: #656565;
+        opacity: 1;
+        text-align: left;
+        font-size: 12px;
+        font-weight: $fontWeightMedium;
+        letter-spacing: -0.12px;
+        line-height: 13px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+
+    p {
+      &.balance {
+        color: #0b0b0b;
+        opacity: 1;
+        text-align: left;
+        font-size: 17px;
+        font-weight: $fontWeightExtraBold;
+        letter-spacing: -0.17px;
+        line-height: 20px;
+        span {
+          font-weight: $fontWeightRegular;
+        }
+      }
+    }
+
+    p {
+      &.availablebalance {
+        opacity: 1;
+        margin-top: toVh(14.84);
+        span {
+          display: block;
+          text-align: left;
+          font-size: 12px;
+          font-weight: $fontWeightMedium;
+          letter-spacing: -0.12px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+[
+  { "merchantId": "10101", "icon": "Media Market.svg", "category": "Electronics", "merchantName": "Media Market" },
+  { "merchantId": "10102", "icon": "Apple Store - Frankfurt.svg", "category": "Electronics", "merchantName": "Apple Store - Frankfurt" },
+  { "merchantId": "10103", "icon": "REWE.svg", "category": "Groceries ", "merchantName": "REWE" },
+  { "merchantId": "10104", "icon": "LUFTHANSA.svg", "category": "Travel Expenses", "merchantName": "LUFTHANSA " },
+  { "merchantId": "10105", "icon": "ZALANDO.svg", "category": "Fashion", "merchantName": "ZALANDO " },
+  { "merchantId": "10106", "icon": "Amazon.svg", "category": "Shopping", "merchantName": "AMAZON.DE" },
+  { "merchantId": "10107", "icon": "STARBUCKS.svg", "category": "Restaurants", "merchantName": "STARBUCKS" },
+  { "merchantId": "10109", "icon": "APOTHEKE.svg", "category": "Pharmacy & Healthcare ", "merchantName": "APOTHEKE " },
+  { "merchantId": "10110", "icon": "H&H.svg", "category": "Fashion", "merchantName": "H&M" },
+  { "merchantId": "10111", "icon": "MJAM.svg", "category": "Groceries ", "merchantName": "MJAM " },
+  { "merchantId": "10112", "icon": "TIGER STORIES.svg", "category": "Leisure & Hobbies ", "merchantName": "TIGER STORIES" },
+  { "merchantId": "10113", "icon": "L'OCCITANE EN PROVENCE.svg", "category": "Cosmetics ", "merchantName": "L'OCCITANE EN PROVENCE" },
+  { "merchantId": "10114", "icon": "LIEFERANDO.DE.svg", "category": "Restaurant & Cafe", "merchantName": "LIEFERANDO.DE" },
+  { "merchantId": "10115", "icon": "WESTWING FURN.svg", "category": "Home & Decoration", "merchantName": "WESTWING FURNITURE" },
+  { "merchantId": "10116", "icon": "", "category": "Taxi", "merchantName": "UBER" },
+  { "merchantId": "10117", "icon": "mcdonald.svg\n", "category": "Restaurants", "merchantName": "McDonalds" }
+]

@@ -1,0 +1,32 @@
+<div class="page">
+  <div class="header">
+    <img class="logo" src="../assets/images/icons/logo.svg" />
+    <img class="profile-pic" src="../assets/images/icons/profile-pic.svg" />
+  </div>
+  <div class="dock-header">
+    <img class="back-arrow" src="../assets/images/icons/down-arrow.svg" />
+    <img class="search" src="../assets/images/icons/search.svg" />
+  </div>
+  <div class="card-selector-container" #cardSelectorContainer>
+    <div class="card-selector" #cardSelector>
+      <div class="overview-tag" (click)="playCarousel()">
+        <div>Overview</div>
+      </div>
+      <ux-account-card *ngFor="let card of cards; index as cardIndex" [card]="card" [selectedCardIndex]="selectedCardIndex" [cardIndex]="cardIndex" (onswipeleft)="swipeLeftHandler($event, cardIndex)" (onswiperight)="swipeRightHandler($event, cardIndex)" (onpanleft)="panLeftHandler($event, cardIndex)" (onpanright)="panRightHandler($event, cardIndex)" (onpanstart)="panStartHandler($event, cardIndex)" (onpanend)="panEndHandler($event, cardIndex)"></ux-account-card>
+      <div class="new-account-tag" (click)="reverseCarousel()">
+        <img src="../assets/images/icons/shopping-bag.svg" />
+        <div>New<br />Account</div>
+      </div>
+    </div>
+  </div>
+  <div class="card-details-header">
+    <div class="tab selected">History</div>
+    <div class="tab">Flex Pay</div>
+    <div class="tab">Scheduled</div>
+  </div>
+  <div class="card-details-container" #scrollable>
+    <div class="card-details" #cardDetails>
+      <ux-account-card-detail *ngFor="let card of cards; index as cardIndex" [card]="card" [selectedCardIndex]="selectedCardIndex" [cardIndex]="cardIndex" (onscrolling)="scrollHandler($event)"></ux-account-card-detail>
+    </div>
+  </div>
+</div>
