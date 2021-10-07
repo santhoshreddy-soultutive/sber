@@ -1,4 +1,4 @@
-<div class="card-detail" [ngClass]="{ 'active-card-detail': selectedCardIndex === cardIndex }">
+<div class="card-detail" [ngClass]="{ 'active-card-detail': selectedCardIndex === cardIndex, 'before-active-card-detail': cardIndex === selectedCardIndex - 1, 'after-active-card-detail': cardIndex === selectedCardIndex + 1 }">
   <div class="content">
     <div class="item" *ngFor="let item of card.details; index as detailIndex">
       <div class="top">

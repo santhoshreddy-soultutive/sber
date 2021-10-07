@@ -15,7 +15,10 @@ $fontWeightExtraBold: 800;
 .card-detail {
   width: 100%;
   flex-shrink: 0;
-
+  opacity: 0.3;
+  &.active-card-detail{
+    opacity: 1;
+  }
   .content {
     .item {
       display: flex;

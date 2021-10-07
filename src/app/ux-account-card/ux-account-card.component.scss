@@ -35,10 +35,9 @@ $fontWeightExtraBold: 800;
   }
   &.active-card {
     width: toVw(214);
-    padding-left: toVw(12);
-    padding-bottom: toVh(18);
+    padding-bottom: toVh(17);
     > div {
-      transform: translateX(0);
+      transform: translateX(0) translateY(0);
     }
   }
 }
@@ -50,6 +49,7 @@ $fontWeightExtraBold: 800;
       display: flex;
       flex-direction: row;
       align-items: center;
+      margin-top: 0px;
       img {
         width: toVw(24);
         height: toVh(23.43);
@@ -148,6 +148,7 @@ $fontWeightExtraBold: 800;
 
     p {
       &.balance {
+        margin-top: toVh(5.16);
         color: #0b0b0b;
         opacity: 1;
         text-align: left;

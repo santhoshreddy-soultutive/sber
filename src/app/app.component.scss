@@ -30,16 +30,17 @@ $fontWeightExtraBold: 800;
     background-color: transparent;
     z-index: 99999;
     opacity: 1;
+    will-change: transform;
     img.logo {
       position: absolute;
-      top: toVh(48.83);
+      top: toVh(48);
       left: toVw(24);
       width: toVw(122.04);
       height: toVh(23.33);
     }
     img.profile-pic {
       position: absolute;
-      top: toVh(46);
+      top: toVh(42);
       left: toVw(323);
       width: toVw(32);
       height: toVh(32);
@@ -56,7 +57,7 @@ $fontWeightExtraBold: 800;
     background-color: transparent;
     z-index: 99999;
     opacity: 0;
-
+    will-change: transform;
     img.back-arrow {
       position: absolute;
       top: toVh(51);
@@ -83,7 +84,7 @@ $fontWeightExtraBold: 800;
     align-items: flex-start;
     background-color: #f4f7f5;
     z-index: 99998;
-
+    will-change: transform;
     .card-selector {
       overflow-x: hidden;
       display: flex;
@@ -92,7 +93,7 @@ $fontWeightExtraBold: 800;
       padding-bottom: toVh(44);
       padding-top: toVh(120);
       align-items: flex-start;
-
+      will-change: transform;
       .overview-tag {
         height: toVh(116);
         width: toVw(35);
@@ -128,18 +129,19 @@ $fontWeightExtraBold: 800;
         display: flex;
         flex-direction: column;
         align-items: center;
+        will-change: transform;
         img {
           width: toVw(17.33);
           height: toVh(20);
           margin-top: toVh(10);
-          margin-bottom: toVh(4);
+          margin-bottom: toVh(6);
         }
         div {
           color: #ffffff;
           text-align: center;
           font-size: 8px;
           font-weight: $fontWeightMedium;
-          letter-spacing: -0.08px;
+          letter-spacing: -0.1px;
           line-height: 8px;
           text-align: center;
         }
@@ -164,6 +166,7 @@ $fontWeightExtraBold: 800;
       width: 100%;
       display: flex;
       flex-direction: row;
+      will-change: transform;
       ux-account-card-detail {
         width: 100%;
         flex-shrink: 0;

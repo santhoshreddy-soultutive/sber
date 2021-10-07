@@ -1,6 +1,6 @@
 <div part="card" class="card" [ngClass]="{ 'active-card': selectedCardIndex === cardIndex, 'before-active-card': selectedCardIndex - 1 === cardIndex, 'after-active-card': selectedCardIndex + 1 === cardIndex }" (swipeleft)="swipeLeftHandler($event)" (swiperight)="swipeRightHandler($event)" (panleft)="panLeftHandler($event)" (panright)="panRightHandler($event)" (panstart)="panStartHandler($event)" (panend)="panEndHandler($event)">
   <div class="content">
-  <p class="accountnumber"><img src="../../assets/images/bank-brand.svg" /><span>{{ card.accountNumber }}</span></p>
+  <p class="accountnumber"><img src="./assets/images/bank-brand.svg" /><span>{{ card.accountNumber }}</span></p>
   <p class="accountname">{{ card.accountName }}</p>
   <p class="balance">
     {{ card.balanceAmount }}&nbsp;<span>{{ card.balanceCurrency }}</span>
